@@ -52,6 +52,82 @@ System.Console.WriteLine($"Umar is small or equal than kescha {myAge <= keschasA
 System.Console.WriteLine($"Umar's and kescha's age are not equal {myAge != keschasAge}");
 
 
+//Birinchi topshiriq
+//outRadius = 4.23M;
+//inRadius = 3;
+
+decimal uzun =2;
+decimal radius;
+decimal pi = 3.14159265358979323846264338327950288419716939937510m;
+System.Console.WriteLine("Doira ichki yuzi va aylana uzunligini hisoblash");
+System.Console.WriteLine($"Ichki yuza qiymatini topish uchun berilgan radiusni kiriting: ");
+radius = Convert.ToDecimal(Console.ReadLine());
+System.Console.WriteLine("Bajarilmoqda...");
+decimal resultForl = radius * radius * pi;
+System.Console.WriteLine($"Doira yuzi:L={resultForl}");
+
+System.Console.WriteLine("Aylanani ichki uzunligini topish uchun radousni kiriting ");
+radius = Convert.ToDecimal(Console.ReadLine());
+System.Console.WriteLine("hisoblanmoqda...");
+decimal uzunlig = uzun * pi * radius;
+System.Console.WriteLine($"S={uzunlig}");
+
+
+decimal uzunOut =2;
+decimal radiusOut;
+decimal piOut = 3.141592653589793238462643383279502884197169399375m;
+System.Console.WriteLine("Doira tashqi yuzi va aylana uzunligini hisoblash");
+System.Console.WriteLine($"Tashqi yuza qiymatini topish uchun berilgan radiusni kiriting: ");
+radiusOut = Convert.ToDecimal(Console.ReadLine());
+System.Console.WriteLine("Bajarilmoqda...");
+decimal resultOut = radiusOut * radiusOut * piOut;
+System.Console.WriteLine($"Doira yuzi:L={resultOut}");
+
+System.Console.WriteLine("Aylanani tashqi uzunligini topish uchun radousni kiriting ");
+radius = Convert.ToDecimal(Console.ReadLine());
+System.Console.WriteLine("hisoblanmoqda...");
+decimal uzunligOut = uzunOut * piOut * radiusOut;
+System.Console.WriteLine($"S={uzunligOut}");
+
+//ikkinchi topshiriq
+decimal kurs = 12400;
+decimal miqdor;
+System.Console.WriteLine("Assalomu Aleykum Hurmatli mijoz\n Dollor Konvertatsiya Bo'limiga hush kelibsiz ");
+System.Console.WriteLine("Konvertatsiya qilmoqchi bo'lgan summa miqdorini kiriting: ");
+miqdor = Convert.ToDecimal(Console.ReadLine());
+System.Console.WriteLine("Hissoblanmoqda...");
+decimal hissob = kurs * miqdor;
+System.Console.WriteLine($"{hissob}sum");
+
+decimal kurs1 = 12400;
+decimal miqdor1;
+System.Console.WriteLine("Assalomu Aleykum Hurmatli mijoz\n Dollor Konvertatsiya Bo'limiga hush kelibsiz ");
+System.Console.WriteLine("Konvertatsiya qilmoqchi bo'lgan summa miqdorini kiriting: ");
+miqdor1 = Convert.ToDecimal(Console.ReadLine());
+System.Console.WriteLine("Hissoblanmoqda...");
+decimal hissob1 = kurs1 * miqdor1;
+System.Console.WriteLine($"{hissob1}sum");
+
+//uchinchi topshiriq
+int year = 365;
+int usersYear;
+int now = 2023;
+System.Console.WriteLine("Qiziq siz nechi kundan buyon bu yer yuzida yashab kelyabsiz");
+System.Console.WriteLine("Agar bilishni hohlasangiz tug'ilgan yilingizni kititing: ");
+usersYear = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Tug'ilgan oyingizni kiriting: ");
+int kunlar =  (now - usersYear) * year;
+System.Console.WriteLine($"Sizning yashagan kunlaringiz:{kunlar}");
+
+int yearOne = 365;
+int usersYearOne;
+int nowOne = 2023;
+System.Console.WriteLine("Qiziq siz nechi kundan buyon bu yer yuzida yashab kelyabsiz");
+System.Console.WriteLine("Agar bilishni hohlasangiz tug'ilgan yilingizni kititing: ");
+usersYearOne = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Tug'ilgan oyingizni kiriting: ");
+int kunlarOne =  (nowOne - usersYearOne) * yearOne;
+System.Console.WriteLine($"Sizning yashagan kunlaringiz:{kunlarOne}");
 
     
   
