@@ -129,5 +129,69 @@ System.Console.WriteLine("Tug'ilgan oyingizni kiriting: ");
 int kunlarOne =  (nowOne - usersYearOne) * yearOne;
 System.Console.WriteLine($"Sizning yashagan kunlaringiz:{kunlarOne}");
 
+//Ikkinchi Amaliy Topshiriq - Basics Takrorlash
+//Birinchi amaliy vazifa
+//Berilgan string va int qiymatlarini xoxlagandek uzgartira olsish mumkin 
+//Natija ham uzgaruvchilarga nisbatan uzgaradi 
+string str = "Telefon";
+string strTwo = "Kompyuter";
+int a = 13;
+int b =  4;
+int inPut;
+int outPut;
+
+System.Console.WriteLine($"Kiritilgan ({str}) so'zingizda nechta harf borligini sanab yozing");
+inPut = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine($"Kiritilgan ({strTwo}) so'zingizda nechta harf borligini sanab yozing");
+outPut = Convert.ToInt32(Console.ReadLine());
+
+string xulosa =
+    inPut < a
+        ? "TELEFON"
+        :  "telefon";
+System.Console.WriteLine(xulosa);        
+string xulosIkki =
+    outPut < b
+        ? "KOMPYUTER"
+        : "kompyuter";
+System.Console.WriteLine(xulosIkki);        
+
+//Ikkinchi amaliy vazifa
+
+int x = 15;
+int y = 10;
+string resultat =$"({x} > {y})";
+if (x > y)
+{
+    System.Console.WriteLine("x is greater than y");
+}
+else if (x < y)
+{
+    System.Console.WriteLine("x is less than y");
+}
+else if (x == y)
+{
+    System.Console.WriteLine("x is equal to y");
+}
+else
+{
+    System.Console.WriteLine("x and y are not compareble");
+}
+System.Console.WriteLine(result);
+
+//Uchinchi topshiriq
+
+string haftaKunlari;
+System.Console.WriteLine("Hafta kunlarini ingliz va Rus tillarida bilib olshihni xoxlaysizmi?\n Unda ketdik !!! ");
+System.Console.WriteLine("Ingliz tili uchun 1 ni rus tili uchun 2 ni yozing ikkala tillar uchun 1 va 2 ni yozing : (Dushanba, Seshanba, Chorshanba, Payshanba, Juma, Shanba, Yakshanba)  ");
+haftaKunlari = Console.ReadLine();
+string days = haftaKunlari switch
+{
+     "1" => "Monday-Dushanba\nTuesday-Seshanba\nWednesday-Chorshanba\nThursday-Payshanba\nFriday-Juma\nSaturday-Shanba\nSunday-Yakshanba.",
+     "2" => "Понедельник-Dushanba\nBторник-Seshanba\nCреда-Chorshanba\nЧетверг-Payshanba\nПятница-Juma\nСуббота-Shanba\nBоскресенье-Yakshanba",
+     "1 2" => "\tEng:\nMonday-Dushanba\nTuesday-Seshanba\nWednesday-Chorshanba\nThursday-Payshanba\nFriday-Juma\nSaturday-Shanba\nSunday-Yakshanba.\n\tRus\nПонедельник-Dushanba\nBторник-Seshanba\nCреда-Chorshanba\nЧетверг-Payshanba\nПятница-Juma\nСуббота-Shanba\nBоскресенье-Yakshanba",
+     _  => "Hech qanday til tanlamadingiz "
+};
+System.Console.WriteLine(days);
     
   
