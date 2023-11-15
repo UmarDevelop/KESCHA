@@ -179,7 +179,7 @@ else
 }
 System.Console.WriteLine(result);
 
-//Uchinchi topshiriq
+//Uchinchi amaliy vazifa
 
 string haftaKunlari;
 System.Console.WriteLine("Hafta kunlarini ingliz va Rus tillarida bilib olshihni xoxlaysizmi?\n Unda ketdik !!! ");
@@ -193,5 +193,55 @@ string days = haftaKunlari switch
      _  => "Hech qanday til tanlamadingiz "
 };
 System.Console.WriteLine(days);
+// Birinchi topshiriq
+//Bu yerda number o'zgaruvchisi har qanday butun sonlarni 0 dan kiritilgan songacha o'z-
+//-ichiga olgan barcha toq sonlarni ko'rsatadi 1000, 23000 va hokozolar
+
+int number; //number uzgaruvchisga 1000 qiymat berib uni consoleda chiqarsak biz kutgan natijani olamiz
+System.Console.WriteLine("Istalgan butun son kiriting va bu sonda qancha toq sonlar borligini bilib oling!");
+number = Convert.ToInt32(Console.ReadLine());
+int zero = 1;
+while(zero < number)
+{
+    System.Console.WriteLine(zero);
+    zero += 2;
+}
+
+//Ikkichi topshiriq
+
+int[] array = {10,24,6,10,30,22};
+int max = array[0];
+int min = array[0];
+System.Console.WriteLine("Eng katta va eng kichik sonlarni hissoblash");
+System.Console.Write("berilgan sonlar: ");
+foreach(int inir in array)
+{
+    System.Console.WriteLine(inir);
+}
+
+for(int it = 0; it < 5; it++)
+{
+
+    if(array[it] > max)
+    max = array[it];  
+    if(array[it] < min)
+    min = array[it]; 
+}
+int hosila = max * min;
+System.Console.WriteLine($"Katta butun son:{max}");
+System.Console.WriteLine($"Kichik butun son:{min}");
+System.Console.WriteLine($"Va bularning kupaytmasi:{min} * {max} = {hosila}");
+
+//Uchinchi amaliy topshiriq 
+
+int nu;
+int factor = 1;
+System.Console.WriteLine("Butun son kiriting va shu soni funksianalini bilib oling: ");
+nu = Convert.ToInt32(Console.ReadLine());
+for(int it = 1; it <= nu; it++)
+{
+    factor *= it;
+}
+System.Console.WriteLine(factor);
     
   
